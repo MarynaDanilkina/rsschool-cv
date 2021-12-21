@@ -60,3 +60,117 @@ ul,li{
     line-height: 80px;
     font-family: Poiret One;
   }
+  a{
+    color:#d6c19c ;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #22201c;
+}
+.all{
+    max-width: 1200px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.container1{
+    width: 430px;
+    height: 1200px;
+    background-color: #FEF2DE;
+ }
+.container2{
+    width: 770px;
+    height: 1200px;
+    background-color: #FFF7EB;
+}
+#rectangle_1{
+    background: #83735C;
+    width: 320px;
+    height: 40px;
+    margin-top: 49px;
+    margin-left: 55px;
+}
+#rectangle_2{
+    background: #83735C;
+    width: 320px;
+    height: 40px;
+    margin-top: 49px;
+    margin-left: 55px;
+}
+#rectangle_3{
+    background: #83735C;
+    width: 320px;
+    height: 40px;
+    margin-top: 49px;
+    margin-left: 55px;
+}
+#rectangle_4{
+    background: #83735C;
+    width: 320px;
+    height: 40px;
+    margin-top: 49px;
+    margin-left: 55px;
+}
+
+ .Contact{
+     margin-left: 95px;
+     color: #FFF4E4;
+     width: 130px;
+     height: 40px;
+     font-family: Marcellus SC;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+ }
+ .list{
+     margin-bottom: 0;
+     margin-top: 24px;
+     margin-left: 55px;
+ }
+ #list{
+    font-size: 24px;
+ }
+
+.list-contact{
+    display: flex;
+}
+.Contact_img{
+    margin-right: 28px;
+    padding-top: 4px;
+}
+.Contact_text{
+width: 224px;
+height: 40px;
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 40px;
+}
+.Contact_text p{
+   margin-bottom: 0;
+    margin-top: 0; 
+}
+hr{
+    border: none; /*Убираем границу*/
+    background-color: #000;
+    height: 1px;
+    margin-top: 47.11px;
+}
+.Contact1{
+    margin-left: 117px;
+    color: #FFF4E4;
+    width: 130px;
+    height: 40px;
+    font-family: Marcellus SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+   margin-bottom: 0;
+   margin-top: 0;
+}
