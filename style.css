@@ -1,0 +1,39 @@
+ul,li{
+    display: block;
+    padding-inline-start: 0px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+   margin-top: -30px;
+    font-family: Marcellus SC;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 80px;
+    
+}
+.header{
+    background-image: url(/assets/img/header.jpg);
+    background-position: center top;
+    background-size: 1600px 440px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    font-style: 18px;
+    
+    justify-content: space-between;
+}
+.menu li a {
+    font-family: 'Marcellus SC' , serif;
+    font-style: 18px;
+}
+.menu li{
+    margin-right: 95px;
+}
+#menu{
+    margin-right: -95px;
+}
