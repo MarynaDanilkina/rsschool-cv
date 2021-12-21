@@ -37,3 +37,26 @@ ul,li{
 #menu{
     margin-right: -95px;
 }
+.About{
+    display: flex;
+}
+.avatar{
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.Maryna{
+    color: #8B7960;
+    font-size: 64px;
+    font-family: Poiret One;
+    font-weight: normal;
+    line-height: 80px;
+    margin-left: 65px;
+}
+.developer{
+    color: #B59D7B;
+    font-weight: normal;
+    margin-left: 350px;
+    font-size: 48px;
+    line-height: 80px;
+    font-family: Poiret One;
+  }
