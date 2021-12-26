@@ -1,0 +1,403 @@
+ul, li{
+    display: block ;
+    padding-inline-start: 0px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto; /*Позиционирование по центру*/
+}
+.header {
+    background-image: url(/assets/img/header.jpg);
+    background-repeat: no-repeat; /* Фоновое изображение не повторяется*/
+    background-position: center top;
+    background-size: 1600px 440px;
+}
+header a {
+ color: #8B7960  ; 
+}
+.menu {
+     display:flex;
+     font-size: 18px;
+ }
+.menu li a {
+font-family: 'Marcellus SC', serif;
+    font-size: 18px;
+ }
+.menu li {
+     margin-right: 95px; /*Отступ справа*/
+ }
+#menu-lang {
+     margin-right: -95px; /* Отменить отступ справа для Languages*/
+ }
+.nav{
+     display: flex;
+     align-items: center;
+    margin-top: -30px;
+     font-family: Marcellus SC;
+     font-style: normal;
+     font-size: 18px;
+     line-height: 80px;
+
+ }
+ .About{
+     display: flex;
+ }
+ .avatar{
+   margin-left: 55px;
+   font-family: 'Poiret One', cursive;
+   margin-top: -20px;
+   margin-bottom: 10px;   
+ }
+ .Maryna{
+     color: #8B7960;
+     font-size: 64px;
+     font-family: Poiret One;
+     font-weight: normal;
+     line-height: 80px;
+     margin-left: 65px;
+ }
+ .developer{
+     color: #B59D7B;
+     font-weight: normal;
+     margin-left: 350px;
+     font-size: 48px;
+     line-height: 80px;
+     font-family: Poiret One;
+   }
+     /* CSS для section*/
+a{
+    color:#d6c19c ;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #22201c;
+}
+.all{
+    max-width: 1200px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.container1{
+    width: 430px;
+    height: 1200px;
+    background-color: #FEF2DE;
+ }
+.container2{
+    width: 770px;
+    height: 1200px;
+    background-color: #FFF7EB;
+}
+#rectangle_1{
+    background: #83735C;
+    width: 320px;
+    height: 40px;
+    margin-top: 49px;
+    margin-left: 55px;
+}
+#rectangle_2{
+    background: #83735C;
+    width: 320px;
+    height: 40px;
+    margin-top: 49px;
+    margin-left: 55px;
+}
+#rectangle_3{
+    background: #83735C;
+    width: 320px;
+    height: 40px;
+    margin-top: 49px;
+    margin-left: 55px;
+}
+#rectangle_4{
+    background: #83735C;
+    width: 320px;
+    height: 40px;
+    margin-top: 49px;
+    margin-left: 55px;
+}
+
+ .Contact{
+     margin-left: 95px;
+     color: #FFF4E4;
+     width: 130px;
+     height: 40px;
+     font-family: Marcellus SC;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+ }
+ .list{
+     margin-bottom: 0;
+     margin-top: 24px;
+     margin-left: 55px;
+ }
+ #list{
+    font-size: 24px;
+ }
+
+.list-contact{
+    display: flex;
+}
+.Contact_img{
+    margin-right: 28px;
+    padding-top: 4px;
+}
+.Contact_text{
+width: 224px;
+height: 40px;
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 40px;
+}
+.Contact_text p{
+   margin-bottom: 0;
+    margin-top: 0; 
+}
+hr{
+    border: none; /*Убираем границу*/
+    background-color: #000;
+    height: 1px;
+    margin-top: 47.11px;
+}
+.Contact1{
+    margin-left: 117px;
+    color: #FFF4E4;
+    width: 130px;
+    height: 40px;
+    font-family: Marcellus SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+   margin-bottom: 0;
+   margin-top: 0;
+}
+/* Для раздела Education*/
+.Univer{
+    margin-top: 24px;
+ margin-right: 55px;
+ margin-bottom: 0;
+ margin-left: 52px;
+width: 323px;
+height: 60px;
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 34px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+}
+.engineer{
+    margin-top: 19px;
+    margin-bottom: 0;
+    margin-left: 113px;
+width: 211px;
+height: 30px;
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+color: #d6c19c;
+}
+.Contact2{
+    margin-left: 138px;
+    color: #FFF4E4;
+    width: 130px;
+    height: 40px;
+    font-family: Marcellus SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+   margin-bottom: 0;
+   margin-top: 0;
+}
+.Contact3{
+    margin-left: 117px;
+    color: #FFF4E4;
+    width: 130px;
+    height: 40px;
+    font-family: Marcellus SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+   margin-bottom: 0;
+   margin-top: 0;
+}
+.languages{
+width: 232px;
+height: 30px;
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+}
+.Rus{
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 99px;
+width: 300px;
+height: 30px;
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+color: #000000;
+}
+.Eng{
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 132px;
+width: 232px;
+height: 30px;
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+color: #000000;
+}
+/*container 2*/
+.myself{
+ margin-top: 10px;
+ margin-left: 280px;
+width: 219px;
+height: 80px;
+font-family: Marcellus SC;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 80px;
+text-align: right;
+color: #8B7960;
+}
+#rectangle11{
+    background: #83735C;
+    width: 405px;
+    height: 11px;
+    margin-left: 187px;
+}
+#rectangle12{
+    background: #83735C;
+    width: 405px;
+    height: 11px;
+    margin-left: 187px;
+}
+#rectangle13{
+    background: #83735C;
+    width: 405px;
+    height: 11px;
+    margin-left: 187px;
+}
+.text_myself{
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+}
+.CodeExample{
+ margin-left: 277px;
+height: 80px;
+font-family: Marcellus SC;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 80px;
+color: #8B7960;
+}
+.code{
+    background: #FEF2DE;
+    width: 655px;
+    height: 460px;
+    margin-left: 62px;
+    margin-top: 34px;
+}
+.Text_cod{
+    margin-top: 20px;
+   padding-top: 5px;
+   height: 60px;
+   font-family:  Poiret One;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 30px;
+   line-height: 50px;
+   color: #8B7960;
+   text-align: center;
+}
+#Experience{
+    margin-left: 300px;
+}
+/*footer*/
+.container_footer{
+    background-color: #EFE6D7;
+    width: 1200px;
+    height: 74px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer_text{
+    display: flex;
+}
+.img_footer{
+    margin-left: 370px;
+    margin-top: 17px;
+}
+.made{
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+}
+#made{ 
+    margin-left: 16px; 
+width: 190px;
+height: 28px;
+    margin-top: 23px;
+}
+.school{
+    margin-top: 11px;
+    margin-left: 14px;
+    padding-top: 0;
+}
+.year{
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+}
+#year{
+    width: 67px;
+height: 28px;
+margin-top: 23px;
+margin-left: 14px;
+}
+#rs{
+    margin-top: 0;
+}
+#rs1{
+    margin-top: 0;
+}
