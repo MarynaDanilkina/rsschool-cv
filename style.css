@@ -319,7 +319,6 @@ text-align: center;
 color: #000000;
 }
 .CodeExample{
-    margin-top: 70px;
  margin-left: 277px;
 height: 80px;
 font-family: Marcellus SC;
@@ -332,7 +331,7 @@ color: #8B7960;
 .code{
     background: #FEF2DE;
     width: 655px;
-    height: 230px;
+    height: 460px;
     margin-left: 62px;
     margin-top: 34px;
 }
