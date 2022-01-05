@@ -7,7 +7,7 @@ ul, li{
     margin: 0 auto; /*Позиционирование по центру*/
 }
 .header {
-    background-image: url(/assets/img/header.jpg);
+    background-image: url(./assets/img/header.jpg);
     background-repeat: no-repeat; /* Фоновое изображение не повторяется*/
     background-position: center top;
     background-size: 1600px 440px;
