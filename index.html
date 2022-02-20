@@ -1,229 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- шрифт Marcellus SC--> 
+    <!-- шрифт Marcellus SC-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
-     <!--шрифт Poiret One-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!--шрифт Poiret One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/img/icon_github.ico">
     <title>CV</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+   
 </head>
+
 <body>
-    <header id="header" class="header">
-        <div class="container">
-            <div class="nav">
-                <ul class="menu">
-                    <li>
+    <svg display="none">
+        <symbol id="github" viewBox="0 0 48 48">
+            <path
+                d="M24.0002 0C10.747 0 0 11.0169 0 24.6076C0 35.4799 6.87679 44.7039 16.4128 47.9577C17.6123 48.1855 18.0526 47.4239 18.0526 46.7739C18.0526 46.1872 18.0304 44.2487 18.02 42.1925C11.3431 43.6811 9.93424 39.2891 9.93424 39.2891C8.84249 36.4448 7.26945 35.6885 7.26945 35.6885C5.09191 34.1613 7.43359 34.1926 7.43359 34.1926C9.84363 34.3662 11.1126 36.7285 11.1126 36.7285C13.2532 40.4904 16.7272 39.4028 18.0967 38.7741C18.3121 37.1836 18.9341 36.0981 19.6205 35.4836C14.2897 34.8613 8.6859 32.7513 8.6859 23.3224C8.6859 20.6358 9.62345 18.4406 11.1587 16.7174C10.9095 16.0976 10.088 13.5947 11.3912 10.2052C11.3912 10.2052 13.4066 9.54386 17.993 12.7276C19.9074 12.1824 21.9606 11.9089 24.0002 11.8996C26.0398 11.9089 28.0946 12.1824 30.0126 12.7276C34.5934 9.54386 36.606 10.2052 36.606 10.2052C37.9124 13.5947 37.0905 16.0976 36.8413 16.7174C38.3801 18.4406 39.3113 20.6358 39.3113 23.3224C39.3113 32.7737 33.6968 34.8548 28.3525 35.464C29.2133 36.2276 29.9804 37.7252 29.9804 40.021C29.9804 43.3135 29.9526 45.9634 29.9526 46.7739C29.9526 47.4288 30.3846 48.1961 31.6011 47.9544C41.132 44.697 48 35.4762 48 24.6076C48 11.0169 37.2546 0 24.0002 0"
+                fill="white" />
+            <path
+                d="M9.16085 35.1623C9.10809 35.2833 8.92085 35.3196 8.75027 35.2365C8.57652 35.157 8.47893 34.992 8.53526 34.8706C8.58683 34.7459 8.77447 34.7112 8.94782 34.7947C9.12197 34.8742 9.22115 35.0408 9.16085 35.1623"
+                fill="#161514" />
+            <path
+                d="M10.1312 36.263C10.0169 36.3707 9.79358 36.3207 9.64205 36.1504C9.48535 35.9806 9.456 35.7534 9.57183 35.6441C9.68965 35.5363 9.90624 35.5868 10.0633 35.7566C10.22 35.9285 10.2506 36.1541 10.1312 36.263"
+                fill="#161514" />
+            <path
+                d="M11.0757 37.6663C10.9289 37.77 10.6889 37.6728 10.5406 37.4561C10.3938 37.2394 10.3938 36.9796 10.5437 36.8755C10.6925 36.7714 10.9289 36.865 11.0793 37.0801C11.2257 37.3004 11.2257 37.5602 11.0757 37.6663"
+                fill="#161514" />
+            <path
+                d="M12.3697 39.0219C12.2384 39.1692 11.9588 39.1297 11.7541 38.9287C11.5446 38.7322 11.4863 38.4534 11.618 38.3062C11.7509 38.1585 12.0321 38.2001 12.2384 38.3994C12.4463 38.5955 12.5098 38.8763 12.3697 39.0219"
+                fill="#161514" />
+            <path
+                d="M14.1548 39.8091C14.0969 40 13.8276 40.0867 13.5562 40.0056C13.2853 39.9221 13.108 39.6986 13.1627 39.5057C13.219 39.3137 13.4896 39.2233 13.7629 39.31C14.0334 39.3932 14.2112 39.6151 14.1548 39.8091"
+                fill="#161514" />
+            <path
+                d="M16.1153 39.9552C16.122 40.1561 15.892 40.3228 15.6071 40.3264C15.3207 40.3329 15.089 40.1703 15.0859 39.9726C15.0859 39.7696 15.3108 39.6046 15.5972 39.5998C15.882 39.5941 16.1153 39.7555 16.1153 39.9552"
+                fill="#161514" />
+            <path
+                d="M17.9397 39.6392C17.9738 39.8353 17.7759 40.0366 17.493 40.0903C17.2149 40.1419 16.9575 40.0209 16.9222 39.8264C16.8877 39.6255 17.0892 39.4241 17.3669 39.3721C17.6501 39.3221 17.9036 39.4399 17.9397 39.6392"
+                fill="#161514" />
+        </symbol>
+        <symbol id="insta" viewBox="0 0 512 512">
+            <g>
+                <path fill="white"
+                    d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z" />
+                <path fill="white"
+                    d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z" />
+                <path fill="white"
+                    d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z" />
+            </g>
+        </symbol>
+        <symbol id="phone" viewBox="0 0 485.213 485.212">
+            <g>
+                <path fill="white"
+                    d="M242.607,0C108.629,0,0.001,108.628,0.001,242.606c0,133.976,108.628,242.606,242.606,242.606
+                    c133.978,0,242.604-108.631,242.604-242.606C485.212,108.628,376.585,0,242.607,0z M370.719,353.989l-19.425,19.429
+                    c-3.468,3.463-13.623,5.624-13.949,5.624c-61.452,0.536-120.621-23.602-164.095-67.08c-43.593-43.618-67.759-102.998-67.11-164.657
+                    c0-0.028,2.224-9.892,5.689-13.324l19.424-19.427c7.108-7.141,20.762-10.368,30.327-7.168l4.086,1.363
+                    c9.537,3.197,19.55,13.742,22.185,23.457l9.771,35.862c2.635,9.743-0.919,23.604-8.025,30.712l-12.97,12.972
+                    c12.734,47.142,49.723,84.138,96.873,96.903l12.965-12.975c7.141-7.141,20.997-10.692,30.719-8.061l35.857,9.806
+                    c9.717,2.67,20.26,12.62,23.456,22.154l1.363,4.145C381.028,333.262,377.826,346.913,370.719,353.989z" />
+            </g>
+        </symbol>
+        <symbol id="mail" viewBox="0 0 512.000000 512.000000">
+            <g fill="white" stroke="none" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+                <path
+                    d="M2285 4898 c-311 -35 -683 -165 -955 -333 -220 -137 -472 -361 -622 -555 -256 -331 -417 -712 -480 -1135 -20 -136 -17 -512 5 -655 103 -665 471 -1245 1027 -1616 287 -191 623 -320 966 -371 164 -24 504 -24 668 0 411 61 815 237 1136 494 459 368 764 897 857 1485 25 159 25 537 0 696 -83 524 -329 995 -708 1356 -370 352 -861 581 -1361 635 -114 13 -419 12 -533 -1z m1785 -1197 c0 -5 -18 -24 -39 -43 -78 -66 -641 -585 -676 -622 -18 -19 -322 -302 -567 -527 -117 -108 -167 -139 -226 -139 -78 0 -81 2 -496 384 -83 76 -191 178 -241 225 -161 155 -647 603 -736 679 -21 19 -39 38 -39 43 0 5 601 9 1510 9 909 0 1510 -4 1510 -9z m-2690 -543 c151 -138 331 -305 400 -370 l124 -118 -39 -39 c-22 -21 -218 -202 -435 -401 -217 -200 -431 -398 -475 -440 -44 -43 -99 -94 -122 -115 l-43 -37 0 971 c0 994 0 990 38 1033 14 16 24 8 146 -107 72 -68 255 -238 406 -377z m2932 451 c17 -32 18 -100 18 -1003 l0 -968 -64 58 c-146 134 -906 843 -971 906 l-70 69 96 92 c52 51 239 223 414 382 176 160 369 338 430 397 60 59 115 106 120 105 6 -2 18 -19 27 -38z m-2117 -1200 c201 -188 230 -204 370 -204 143 0 171 15 367 199 87 81 162 146 167 144 6 -1 79 -69 163 -149 84 -80 284 -266 443 -413 427 -394 560 -520 560 -531 0 -5 -16 -18 -35 -28 -33 -16 -129 -17 -1680 -15 -1632 3 -1645 3 -1677 23 l-32 20 157 147 c86 80 310 288 497 461 187 174 383 356 435 406 52 49 97 90 100 90 3 0 77 -67 165 -150z" />
+            </g>
+        </symbol>
+        <symbol id="figma" viewBox="0 0 48 48">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM19.2 38.4C21.851 38.4 24 36.251 24 33.6V28.8H19.2C16.549 28.8 14.4 30.949 14.4 33.6C14.4 36.251 16.549 38.4 19.2 38.4ZM14.4 24C14.4 26.651 16.549 28.8 19.2 28.8H24V19.2H19.2C16.549 19.2 14.4 21.349 14.4 24ZM14.4 14.4C14.4 17.051 16.549 19.2 19.2 19.2H24V9.6H19.2C16.549 9.6 14.4 11.749 14.4 14.4ZM24 9.6V19.2H28.8C31.451 19.2 33.6 17.051 33.6 14.4C33.6 11.749 31.451 9.6 28.8 9.6H24ZM33.6 24C33.6 21.349 31.451 19.2 28.8 19.2C26.149 19.2 24 21.349 24 24C24 26.651 26.149 28.8 28.8 28.8C31.451 28.8 33.6 26.651 33.6 24Z"
+                fill="white" />
+        </symbol>
+        <symbol id="html" viewBox="0 0 30 30">
+            <path fill="white"
+                d="M2.072,0l2.399,26.963L15.234,30l10.837-3.037L28.472,0H2.072z M23.259,8.795H10.622l0.281,3.393h12.074L22.04,22.389    l-6.73,1.855v0.02h-0.075l-6.787-1.875l-0.413-5.213h3.281l0.244,2.625l3.675,0.994l3.692-0.994l0.414-4.275H7.866L6.984,5.514    H23.56L23.259,8.795z" />
+        </symbol>
+        <symbol id="css" viewBox="0 0 800 1024">
+            <path fill="white"
+                d="M76.795 870.705L4.924 64h790.152l-71.871 806.27L399.347 960zm570.618-641.836H151.716l8.93 98.878H396.16L169.815 429.021l8.907 98.66 342.806.218-11.543 128.498-110.203 29.554-110.42-29.554-6.97-79.06h-99.314l13.939 155.287L400 788.684l202.112-56.06 27.224-303.603H411.922l226.343-101.274z" />
+        </symbol>
+        <symbol id="js" viewBox="0 0 32 32">
+            <path fill="white"
+                d="M18.774,19.7a3.727,3.727,0,0,0,3.376,2.078c1.418,0,2.324-.709,2.324-1.688,0-1.173-.931-1.589-2.491-2.272l-.856-.367c-2.469-1.052-4.11-2.37-4.11-5.156,0-2.567,1.956-4.52,5.012-4.52A5.058,5.058,0,0,1,26.9,10.52l-2.665,1.711a2.327,2.327,0,0,0-2.2-1.467,1.489,1.489,0,0,0-1.638,1.467c0,1.027.636,1.442,2.1,2.078l.856.366c2.908,1.247,4.549,2.518,4.549,5.376,0,3.081-2.42,4.769-5.671,4.769a6.575,6.575,0,0,1-6.236-3.5ZM6.686,20c.538.954,1.027,1.76,2.2,1.76,1.124,0,1.834-.44,1.834-2.15V7.975h3.422V19.658c0,3.543-2.078,5.156-5.11,5.156A5.312,5.312,0,0,1,3.9,21.688Z" />
+        </symbol>
+    </svg>
+    <div class="wrapper">
+        <header class="header">
+
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
                         <a href="#Info-Contact">Contact info</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#About-Myself">About myself</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#Skills">Skills</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#Code-Examles">Code examples</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#Experience">Experience</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#Education">Education</a>
                     </li>
-                    <li id="menu-lang">
+                    <li class="menu__item" id="menu-lang">
                         <a href="#Languages">Languages</a>
                     </li>
-                </ul>    
-            </div>
-            <div class="About">
-                <div class="avatar">
-                    <img src="./assets/img/avatar.png" alt="avatar" width="320" height="320">
+                </ul>
+            </nav>
+
+        </header>
+        <main class="main _container">
+            <div class="block__left">
+                <div class="about">
+                    <div class="avatar">
+                        <img src="./assets/img/avatar.png" alt="avatar" width="320" height="320">
+                    </div>
+
                 </div>
-                <div>
+                <div class="block-info contact">
+
+                    <h2 id="Info-Contact" class="cv__h2 cv__h2-white">Contact info </h2>
+
+
+                    <div>
+                        <ul class="block__list">
+                            <li class="list-contact">
+
+                                <svg class="icon">
+                                    <use xlink:href="#github"></use>
+                                </svg>
+
+                                <div class="contact_text link">
+                                    <p><a href="https://github.com/MarynaDanilkina">MarynaDanilkina</a></p>
+                                </div>
+                            </li>
+                            <li class="list-contact">
+                                <a href="https://www.instagram.com/rusalenko_m/">
+                                    <svg class="icon">
+                                        <use xlink:href="#insta"></use>
+                                    </svg>
+                                </a>
+
+                                <div class="contact_text link">
+                                    <p><a href="https://www.instagram.com/rusalenko_m/">rusalenko_m</a></p>
+                                </div>
+                            </li>
+                            <li class="list-contact">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                                <div class="contact_text link">
+                                    <p><a href="tel:+375291956650"> (29) 195-66-50</a></p>
+                                </div>
+                            </li>
+                            <li class="list-contact">
+                                <svg class="icon">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                                <div class="contact_text link">
+                                    <p><a href="mailto:danilkinamari99@mail.com">Danilkinamari99@gmail.com</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-info skill">
+
+                    <h2 id="Skills" class="cv__h2 cv__h2-white">Skills</h2>
+
+                    <ul id="list" class="block__list">
+                        <li class="list-contact">
+                            <svg class="icon">
+                                <use xlink:href="#github"></use>
+                            </svg>
+                            <div class="contact_text">
+                                <p>GitHub</p>
+                            </div>
+                        </li>
+                        <li class="list-contact">
+                            <svg class="icon">
+                                <use xlink:href="#figma"></use>
+                            </svg>
+                            <div class="contact_text">
+                                <p>Figma</p>
+                            </div>
+                        </li>
+                        <li class="list-contact">
+                            <svg class="icon">
+                                <use xlink:href="#html"></use>
+                            </svg>
+                            <div class="contact_text">
+                                <p>HTML</p>
+                            </div>
+                        </li>
+                        <li class="list-contact">
+                            <svg class="icon">
+                                <use xlink:href="#css"></use>
+                            </svg>
+                            <div class="contact_text">
+                                <p>CSS</p>
+                            </div>
+                        </li>
+                        <li class="list-contact">
+                            <svg class="icon">
+                                <use xlink:href="#js"></use>
+                            </svg>
+                            <div class="contact_text">
+                                <p>JavaScript</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="block__rigth">
+
+                <div class="name">
                     <h1 class="Maryna">MARYNA DANILKINA</h1>
                     <h2 class="developer">FRONT-END DEVELOPER</h2>
                 </div>
-            </div> 
-        </div>
-    </header>
-    <section class="all">
-        <div class="container1">
-            <div class="contact-info"> 
-                <div id="rectangle_1"> <!--Коричневый блок -->
-                    <a id="Info-Contact"><h2 class="Contact">Contact info </h2></a>
+                <div class="block__info__rigth">
+                    <h2 id="About-Myself" class="cv__h2__rigth cv__h2-black">About myself</h2>
+
+                    <div class="text_info">
+                        <p>Hello! I am 22 years old. I am a beginner Front-end developer from Gomel. My goal is to gain
+                            new knowledge and, most importantly, to apply it correctly. Now I am on maternity leave, but
+                            in the future I would like to work in a large company on interesting projects. </p>
+                    </div>
+
                 </div>
-                <div>
-                    <ul class="list">
-                    <li class="list-contact">
-                        <div class="Contact_img">
-                            <img src="./assets/img/icon_github.png" alt="GitHub" width="30" height="30">                    
-                        </div>
-                        <div class="Contact_text">
-                            <p><a href="https://github.com/MarynaDanilkina">github.com/MarynaDanilkina</a></p>
-                        </div>
-                    </li>
-                    <li class="list-contact">
-                        <div class="Contact_img">
-                            <img src="./assets/img/icon_instagram.png" alt="Instagram" width="30" height="30">                    
-                        </div>
-                        <div class="Contact_text">
-                            <p><a href="https://www.instagram.com/rusalenko_m/">rusalenko_m</a></p>
-                        </div>
-                    </li>
-                    <li class="list-contact">
-                        <div class="Contact_img">
-                            <img src="./assets/img/icon_phone.png" alt="Phone" width="30" height="30">                    
-                        </div>
-                        <div class="Contact_text">
-                            <p><a href="tel:+375291956650"> (29) 195-66-50</a></p>
-                        </div>
-                    </li>
-                    <li class="list-contact">
-                        <div class="Contact_img">
-                            <img src="./assets/img/icon_mail.png" alt="mail" width="30" height="30">                    
-                        </div>
-                        <div class="Contact_text">
-                            <p><a href="mailto:danilkinamari99@mail.com">Danilkinamari99@gmail.com</a></p>
-                        </div>
-                    </li>
-                    </ul>
+                <div class="block__info__rigth">
+                    <h2 id="Code-Examles" class="cv__h2__rigth cv__h2-black">Code examples</h2>
+
+                    <div class="text_info1">
+                        <pre class="code">
+                          <code class="language-javascript">
+function nicknameGenerator(name){
+    if ((name[2] === 'a' || name[2] === 'e' || name[2] === 'i' || name[2] === 'o' || name[2] === 'u') && name.length >4){
+        return name.slice(0, 4)
+    } else if(name.length < 4){
+        return "Error: Name too short"
+    } else {
+        return name.slice(0, 3)
+    }
+}      </code>
+                      </pre>
+                    </div>
+
                 </div>
-            </div>
-            <div class="line">
-                <hr>
-            </div>
-            <div id="rectangle_2"> <!--Коричневый блок -->
-                <a id="Education"><h2 class="Contact1">Education </h2></a>
-            </div>
-            <div class="Education">
-                <p class="Univer"><a href="https://www.bsut.by/" >Belarusian State University of Transport</a></p>
-                    <p class="engineer">Mechanical engineer</p>
-            </div>
-            <div class="line">
-                <hr>
-            </div>
-            <div id="rectangle_3"> <!--Коричневый блок -->
-                <a id="Skills"><h2 class="Contact2">Skills</h2></a>
-            </div>
-            <ul id="list" class="list">
-                <li class="list-contact">
-                    <div class="Contact_img">
-                        <img src="./assets/img/icon_il.png" alt="Ai" width="30" height="30">                    
+
+                <div class="block__info__rigth experience">
+                    <h2 id="Experience" class="cv__h2__rigth cv__h2-black">Experience</h2>
+
+                    <div class="text_info">
+                        <p>No work expirience </p>
                     </div>
-                    <div class="Contact_text">
-                        <p>Adobe Illustrator</p>
-                    </div>
-                </li>
-                <li class="list-contact">
-                    <div class="Contact_img">
-                        <img src="./assets/img/icon_github.png" alt="github" width="30" height="30">                    
-                    </div>
-                    <div class="Contact_text">
-                        <p>GitHub</p>
-                    </div>
-                </li>
-                <li class="list-contact">
-                    <div class="Contact_img">
-                        <img src="./assets/img/icon_figma.png" alt="Figma" width="30" height="30">                    
-                    </div>
-                    <div class="Contact_text">
-                        <p>Figma</p>
-                    </div>
-                </li>
-                <li class="list-contact">
-                    <div class="Contact_img">
-                        <img src="./assets/img/icon_html.png" alt="html" width="30" height="30">                    
-                    </div>
-                    <div class="Contact_text">
-                        <p>HTML</p>
-                    </div>
-                </li>
-                <li class="list-contact">
-                    <div class="Contact_img">
-                        <img src="./assets/img/icon_css.png" alt="css" width="30" height="30">                    
-                    </div>
-                    <div class="Contact_text">
-                        <p>CSS</p>
-                    </div>
-                </li>
-                </ul>
-            <div class="line">
-                <hr>
-            </div>
-            <div id="rectangle_4"> <!--Коричневый блок -->
-                <a id="Languages"><h2 class="Contact3">Languages</h2></a>
-            </div>
-            <div>
-                <p  class="Rus">Russian - native speaker</p>
-                <p class="Eng">English level - A1</p>
-            </div>
-        </div>
-        <div class="container2">
-            <div>
-                <div class="myself"><a id="About-Myself"></a><p>About myself </p></div>
-                <div id="rectangle11"></div>
-                <div class="text_myself">
-                    <p>Hello! I am 22 years old. I am a beginner Front-end developer from Gomel. My goal is to gain new knowledge and, most importantly, to apply it correctly. Now I am on maternity leave, but in the future I would like to work in a large company on interesting projects. </p>
-                </div>            
-            </div>
-            <div>
-                <div class="CodeExample"><a id="Code-Examles"></a><p>Code examples </p></div>
-                <div id="rectangle12"></div>
-                <div >
-                    <div class="code">
-                        <div class="Text_cod">
-                            <p>
-                           <code>
-                            function updateLight(current) { <br>
-                                if(current === "green"){ <br>
-                                  return "yellow" <br>
-                                } else if( current === "yellow"){ <br>
-                                  return "red" <br>
-                                } else if( current === "red"){ <br>
-                                  return "green"} <br>
-                              } <br>
-                           </code>
-                       </p>
-                        </div>
-                    </div>
-                </div>    
-                <div id="Experience" class="CodeExample"><p>Experience </p></div>
-                <div id="rectangle13"></div>    
-                <div class="text_myself">
-                    <p>No work expirience </p>
-                </div>    
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container_footer">
-            <div class="footer_text">
-                <div class="img_footer">
-                    <p id="rs"><a href="https://github.com/MarynaDanilkina"><img src="assets/img/icon_github.png" 
-                        alt="github" width="40" height="40"></a></p>
                 </div>
-                <div class="made">
-                    <p id="made">Made with love in</p>
+
+                <div class="block__info__rigth">
+                    <h2 id="Education" class="cv__h2__rigth cv__h2-black">Education</h2>
+
+                    <div class="text_info">
+                        <p class="Univer"><a href="https://www.bsut.by/">Belarusian State University of Transport</a>
+                        </p>
+                        <p class="engineer">Mechanical engineer</p>
+                    </div>
                 </div>
-                <div class="school">
-                    <p id="rs1"><a href="https://rs.school/js/"><img src="assets/img/rs_school_js.svg" alt="rs_school_js" 
-                        width="135" height="50"> </a></p>
+                <div class="block__info__rigth">
+                    <h2 id="Languages" class="cv__h2__rigth cv__h2-black">Languages</h2>
+
+                    <div class="text_info">
+                        <p class="Rus">Russian - native speaker</p>
+                        <p class="Eng">English level - A1</p>
+                    </div>
                 </div>
-                <div class="year">
-                    <p id="year">2022</p>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!-- <footer>
+            <div class="container_footer">
+                <div class="footer_text">
+                    <div class="img_footer">
+                        <p id="rs"><a href="https://github.com/MarynaDanilkina"><img src="assets/img/icon_github.png"
+                                    alt="github" width="40" height="40"></a></p>
+                    </div>
+                    <div class="made">
+                        <p id="made">Made with love in</p>
+                    </div>
+                    <div class="school">
+                        <p id="rs1"><a href="https://rs.school/js/"><img src="assets/img/rs_school_js.svg"
+                                    alt="rs_school_js" width="135" height="50"> </a></p>
+                    </div>
+                    <div class="year">
+                        <p id="year">2022</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    </body>
-    
+        </footer>    -->
+    </div>
+
+</body>
+
 </html>
