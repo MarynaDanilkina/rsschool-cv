@@ -9,7 +9,7 @@
 }
 a:hover{
 	transition: .1s;
-	color: #BDAE82;
+	color: #77B292;
 	text-decoration: none;
 
 }
@@ -61,7 +61,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #282626;
+    background-color: #B66A54;
     padding: 30px 30px;
     position: fixed;
     width: calc(100% - 30px);
@@ -82,16 +82,17 @@ body{
     padding: 0px 10px;
 }
 .about{
- 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .avatar{
-    background-color: #000;
-    padding: 30px 10px 30px 10px;
     display: flex;
     justify-content: center;
+}
+.avatar img{
+    height: 100%;
+    width: 100%;
 }
 .main{
     padding-top: 78px;
@@ -101,7 +102,7 @@ body{
 }
 .block__left{
     width: 35%;
-    background-color: #5f615a;
+    background-color: #1B0802;
 }
 .block__rigth{
     width: 65%;
@@ -113,7 +114,7 @@ body{
     font-size: 30px;
     margin-bottom: 15px;
     padding-bottom: 7px;
-    border-bottom: 2px solid #ecb830;
+    border-bottom: 2px solid #B6877A;
 }
 .cv__h2__rigth{
     font-size: 30px;
@@ -131,7 +132,7 @@ body{
     
   padding: 40px 60px;
     margin-top: 80px;
-    background-color: #ecb830;
+    background-color: #B6877A;
     color: #000;
 }
 .Maryna{  
@@ -186,6 +187,27 @@ pre code.hljs {
 }
 .code{
     padding: 0px 30px;
+}
+.portfolio__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.portfolio__item{
+    width: 30%;
+}
+.portfolio__item a{
+    color: #000;
+}
+.portfolio__item img{
+    width: 100%;
+    margin-bottom: 8px;
+}
+.portfolio__info p{
+    padding: 3px 10px;
+    font-size: 14px;
 }
 .experience{
     padding: 0px 50px 10px 50px;
