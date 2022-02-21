@@ -204,7 +204,7 @@ body{
         display: flex;
     }
 	.header__menu-icon{
-        
+        margin-left: 20px;
 		z-index: 20;
 		display: block;
 		position: relative;
@@ -576,6 +576,7 @@ body{
 }
 
 .icon{
+    fill: #fff;
     width: 30px;
     height: 30px;
     margin-right: 20px;
@@ -611,6 +612,12 @@ body{
         height: 30px;
         margin-right: 10px;
     }
+}
+.icon__right{
+    width: 30px;
+    height: 30px;
+    fill: #000;
+    margin-bottom: -5px;
 }
 .contact_text{
     display: flex;
@@ -794,4 +801,25 @@ pre code.hljs {
 .portfolio__info p{
     padding: 3px 10px;
     font-size: 14px;
+}
+.header__moon {
+    border: none;
+    background: transparent;
+    background-image: url(./assets/img/moon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    width: 35px;
+    height: 35px;
+}
+.header__sun {
+    border: none;
+    background: transparent;
+    background-image: url(./assets/img/sun.svg);
+    filter: invert(-1) brightness(0);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    width: 35px;
+    height: 35px;
 }
