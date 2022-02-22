@@ -58,19 +58,23 @@ function changeSubject() {
         document.querySelectorAll('.icon__right').forEach((el) => {
             el.style.fill = "#FFF";
         });
-        document.querySelector('.header').style.backgroundColor = "#1B0802";
-        document.querySelector('.name').style.backgroundColor = "rgb(68 57 53)";
         document.querySelector('.name').style.color = "#fff";
-        document.querySelector('.block__rigth').style.backgroundColor = "rgb(112 91 85)";
-        document.querySelector('body').style.color = "#fff";
+        document.querySelector('.block__rigth').style.backgroundColor = "#2b3840";
         document.querySelectorAll('.cv__h2-black').forEach((el) => {
             el.style.color = "#fff";
         });
         document.querySelectorAll('.portfolio__item a').forEach((el) => {
             el.style.color = "#fff";
         });
-        document.querySelector('pre code.hljs').style.backgroundColor = "#1B0802";
-        document.querySelector('.menu').style.backgroundColor = "#1B0802";
+        document.querySelector('pre code.hljs').style.backgroundColor = "#2b3840";
+        document.querySelector('.name').style.backgroundColor = "#69a9cb";
+        document.querySelector('.block__left').style.backgroundColor = "#041a2d";
+        document.querySelectorAll('.cv__h2__rigth').forEach((el) => {
+            el.style.borderBottomColor = "#fff";
+        });
+        document.querySelector('.block__rigth').style.color = "#fff";
+        document.querySelector('.about').style.backgroundColor = "#041a2d";
+
 
 
 
@@ -80,11 +84,8 @@ function changeSubject() {
         document.querySelectorAll('.icon__right').forEach((el) => {
             el.style.fill = "#000";
         });
-        document.querySelector('.header').style.backgroundColor = "#B66A54";
-        document.querySelector('.name').style.backgroundColor = "#B6877A";
         document.querySelector('.name').style.color = "#000";
         document.querySelector('.block__rigth').style.backgroundColor = "#fff";
-        document.querySelector('body').style.color = "#000";
         document.querySelectorAll('.cv__h2-black').forEach((el) => {
             el.style.color = "#000";
         });
@@ -92,7 +93,14 @@ function changeSubject() {
             el.style.color = "#000";
         });
         document.querySelector('pre code.hljs').style.backgroundColor = "#fff";
-        document.querySelector('.menu').style.backgroundColor = "#B66A54";
+        document.querySelector('.name').style.backgroundColor = "#b7afa6";
+        document.querySelector('.block__left').style.backgroundColor = "#69a9cb";
+        document.querySelectorAll('.cv__h2__rigth').forEach((el) => {
+            el.style.borderBottomColor = "#000";
+        });
+        document.querySelector('.block__rigth').style.color = "#000";
+        document.querySelector('.about').style.backgroundColor = "#69a9cb";
+
 
     }
 }
